@@ -1,7 +1,9 @@
-age = 15
+print ("Welcome to tip calculator!")
+total_bill = input("What was the total bill? $")
+tip_percentage = input("What percentage would you like to tip? ")
+people = input("How many people to split the bill? ")
+totalbill = (float(total_bill) / int(people))
 
-weeks = age * 52
+final = totalbill + (float(tip_percentage) * 0.01 * float(totalbill))
 
-average_weeks = 4056
-
-print (f"You have apprixmatley {average_weeks - weeks} weeks left to live")
+print(f"Each person should pay: ${round(final , 2)}")
